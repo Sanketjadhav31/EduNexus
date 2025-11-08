@@ -1,0 +1,17 @@
+{
+  "name": "edunexus",
+  "version": "1.0.0",
+  "description": "Mini Learning Management System - MERN Stack",
+  "scripts": {
+    "install-all": "cd backend && npm install && cd ../frontend && npm install",
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm run dev\"",
+    "start": "cd backend && npm start",
+    "seed-demo": "cd backend && node seed-demo.js"
+  },
+  "keywords": ["lms", "mern", "education", "learning"],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
