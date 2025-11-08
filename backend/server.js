@@ -24,7 +24,13 @@ const io = new Server(httpServer, {
   }
 });
 
-app.use(cors());
+app.use(cors({
+  origin: [
+    'http://localhost:5173',
+    'https://edunexus.netlify.app'
+  ],
+  credentials: true
+}));
 app.use(express.json());
 
 connectDB();
