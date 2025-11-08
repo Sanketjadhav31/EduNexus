@@ -27,7 +27,9 @@ const io = new Server(httpServer, {
 app.use(cors({
   origin: [
     'http://localhost:5173',
-    'https://edunexus.netlify.app'
+    'https://edunexus.netlify.app',
+    'http://projectaapp.netlify.app',
+    'https://projectaapp.netlify.app'
   ],
   credentials: true
 }));
@@ -49,7 +51,7 @@ app.get('/api/health', (req, res) => {
 io.use((socket, next) => {
   const token = socket.handshake.auth.token;
   if (!token) return next(new Error('Authentication error'));
-  
+
   try {
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
     socket.userId = decoded.id;

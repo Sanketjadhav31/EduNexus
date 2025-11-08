@@ -2,6 +2,16 @@
 
 A complete MERN stack Learning Management System with real-time features.
 
+## 🌐 Live Demo
+
+**🚀 [Visit Live Application](http://projectaapp.netlify.app/login)**
+
+### Quick Login:
+- **👨‍🏫 Instructor:** instructor@demo.com / password123
+- **👨‍🎓 Student:** student1@demo.com / password123
+
+---
+
 ## ✨ Features
 
 - 👨‍🏫 **Instructor Dashboard** - Create courses, add lectures, assignments
